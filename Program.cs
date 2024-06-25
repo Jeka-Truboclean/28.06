@@ -12,6 +12,10 @@ namespace _28._06
                 Process process = new Process();
                 process.StartInfo.FileName = "notepad.exe";
                 process.StartInfo.Arguments = "";
+                process.StartInfo.RedirectStandardOutput = false;
+                process.StartInfo.RedirectStandardError = false;
+                process.StartInfo.UseShellExecute = true;
+                process.StartInfo.CreateNoWindow = false;
 
                 process.Start();
 
